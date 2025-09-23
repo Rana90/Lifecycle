@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-22 12:32:09.954236",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ecr_link",
+  "status",
+  "assigned_engineer",
+  "implementation_plan",
+  "effective_date",
+  "disposition_of_existing_stock",
+  "new_item_revisions"
+ ],
+ "fields": [
+  {
+   "fieldname": "ecr_link",
+   "fieldtype": "Link",
+   "label": "ECR Link",
+   "options": "Engineering Change Request"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nIn Progress\nPending Validation\nCompleted\nClosed"
+  },
+  {
+   "fieldname": "assigned_engineer",
+   "fieldtype": "Link",
+   "label": "Assigned Engineer",
+   "options": "User"
+  },
+  {
+   "fieldname": "implementation_plan",
+   "fieldtype": "Text Editor",
+   "label": "Implementation Plan "
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "disposition_of_existing_stock",
+   "fieldtype": "Select",
+   "label": "Disposition of Existing Stock",
+   "options": "\nUse As Is\nRework\nScrap"
+  },
+  {
+   "fieldname": "new_item_revisions",
+   "fieldtype": "Table",
+   "label": "New Item Revisions",
+   "options": "New Item Revisions"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-23 17:39:14.375481",
+ "modified_by": "manju@korecent.com",
+ "module": "LCM",
+ "name": "Engineering Change Order",
+ "owner": "manju@korecent.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
