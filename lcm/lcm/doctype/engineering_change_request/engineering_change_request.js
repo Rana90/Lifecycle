@@ -42,3 +42,13 @@ frappe.ui.form.on('Engineering Change Request', {
         }
     }
 });
+
+
+
+frappe.ui.form.on('Engineering Change Request', {
+    onload: function(frm) {
+        if (frm.is_new() && !frm.doc.request_date) {
+            frm.set_value('request_date', frappe.datetime.get_today());
+        }
+    }
+});

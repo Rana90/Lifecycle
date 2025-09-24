@@ -26,3 +26,14 @@ frappe.ui.form.on('New Item Revisions', {
         }
     }
 });
+
+
+
+
+frappe.ui.form.on('Engineering Change Order', {
+    onload: function(frm) {
+        if (frm.is_new() && !frm.doc.effective_date) {
+            frm.set_value('effective_date', frappe.datetime.get_today());
+        }
+    }
+});
