@@ -6,22 +6,28 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "compliance_certificates"
+  "compliance_certificates",
+  "description"
  ],
  "fields": [
   {
    "fieldname": "compliance_certificates",
-   "fieldtype": "Link",
+   "fieldtype": "Attach",
    "in_list_view": 1,
-   "label": "Compliance Certificates",
-   "options": "compliance"
+   "label": "Compliance Certificates"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-23 17:39:10.613325",
+ "modified": "2025-09-24 15:20:32.013546",
  "modified_by": "manju@korecent.com",
  "module": "LCM",
  "name": "Compliance Certificates",

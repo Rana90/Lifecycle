@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PS- .####",
  "creation": "2025-09-22 12:44:07.222382",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -45,10 +46,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-23 17:39:09.314555",
+ "modified": "2025-09-24 14:56:20.261042",
  "modified_by": "manju@korecent.com",
  "module": "LCM",
  "name": "Product Specification",
+ "naming_rule": "Expression (old style)",
  "owner": "manju@korecent.com",
  "permissions": [
   {

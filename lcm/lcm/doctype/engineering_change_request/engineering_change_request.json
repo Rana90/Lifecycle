@@ -1,14 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ECR- .####",
  "creation": "2025-09-22 12:18:49.630092",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "requestor",
-  "request_date",
-  "status",
   "change_title",
+  "column_break_hidn",
+  "request_date",
+  "section_break_muem",
   "change_description",
   "justification",
   "affected_items",
@@ -27,12 +29,6 @@
    "label": "Request Date"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Draft\nUnder Review\nApproved\nRejected"
-  },
-  {
    "fieldname": "change_title",
    "fieldtype": "Data",
    "label": "Change Title"
@@ -43,7 +39,7 @@
    "label": "Change Description"
   },
   {
-   "description": "(detailing cost, quality, performance reasons)",
+   "description": "(Detailing cost, quality, performance reasons)",
    "fieldname": "justification",
    "fieldtype": "Text Editor",
    "label": "Justification"
@@ -58,15 +54,24 @@
    "fieldname": "impact_analysis",
    "fieldtype": "Text Editor",
    "label": "Impact Analysis"
+  },
+  {
+   "fieldname": "column_break_hidn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_muem",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-23 17:39:16.385703",
+ "modified": "2025-09-24 15:12:39.506630",
  "modified_by": "manju@korecent.com",
  "module": "LCM",
  "name": "Engineering Change Request",
+ "naming_rule": "Expression (old style)",
  "owner": "manju@korecent.com",
  "permissions": [
   {

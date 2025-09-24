@@ -1,16 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ECO - .####",
  "creation": "2025-09-22 12:32:09.954236",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "ecr_link",
-  "status",
   "assigned_engineer",
-  "implementation_plan",
-  "effective_date",
   "disposition_of_existing_stock",
+  "column_break_fefx",
+  "status",
+  "effective_date",
+  "section_break_hjwq",
+  "implementation_plan",
   "new_item_revisions"
  ],
  "fields": [
@@ -53,15 +56,24 @@
    "fieldtype": "Table",
    "label": "New Item Revisions",
    "options": "New Item Revisions"
+  },
+  {
+   "fieldname": "column_break_fefx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hjwq",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-23 17:39:14.375481",
+ "modified": "2025-09-24 15:15:33.816564",
  "modified_by": "manju@korecent.com",
  "module": "LCM",
  "name": "Engineering Change Order",
+ "naming_rule": "Expression (old style)",
  "owner": "manju@korecent.com",
  "permissions": [
   {

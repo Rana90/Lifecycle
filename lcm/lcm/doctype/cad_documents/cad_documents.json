@@ -6,22 +6,28 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "cad_documents"
+  "cad_documents",
+  "description"
  ],
  "fields": [
   {
    "fieldname": "cad_documents",
-   "fieldtype": "Link",
+   "fieldtype": "Attach",
    "in_list_view": 1,
-   "label": "CAD Documents",
-   "options": "CAD"
+   "label": "CAD Documents"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-23 17:39:12.323082",
+ "modified": "2025-09-24 15:17:17.991460",
  "modified_by": "manju@korecent.com",
  "module": "LCM",
  "name": "CAD Documents",
