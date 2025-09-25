@@ -10,7 +10,7 @@ frappe.ui.form.on('New Item Revisions', {
                 method: "frappe.client.get_list",
                 args: {
                     doctype: "BOM",
-                    filters: { item: row.item, is_active: 1 },
+                    filters: { item: row.item, is_active: 1, is_default:1 },
                     fields: ["name"],
                     limit_page_length: 1
                 },
