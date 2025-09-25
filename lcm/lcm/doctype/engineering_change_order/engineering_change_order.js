@@ -30,6 +30,26 @@ frappe.ui.form.on('New Item Revisions', {
 
 
 
+frappe.ui.form.on('New Item Revisions', {
+    bom: function(frm, cdt, cdn) {},
+    new_item_revisions_add: function(frm, cdt, cdn) {
+        let row = locals[cdt][cdn];
+        frm.set_query("bom", "new_item_revisions", function(doc, cdt, cdn) {
+            let child = locals[cdt][cdn];
+            return {
+                filters: {
+                    item: child.item,
+                    is_active: 1
+                }
+            };
+        });
+    }
+});
+
+
+
+
+
 frappe.ui.form.on('Engineering Change Order', {
     onload: function(frm) {
         if (frm.is_new() && !frm.doc.effective_date) {
